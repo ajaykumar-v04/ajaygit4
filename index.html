@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Pollution Percentage</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="s6">Global Air Weather</h1>
+      <h2 class="s1">AIR QUALITY INDEX (AQI)</h2>
+      <p>The air Quality Index is based on measurement of particular matter(pm2.5 and pm1o)ozone(03).nitrogen dioxide(no2).sulfur dioxide(so2)and carbon monoxide(co)emission,</p>
+      <div class="search-bar">
+        <input type="text" id="cityInput" placeholder= "search AQI by city name" />
+        <button id="searchButton">Search</button>
+      </div>
+
+      <div id="result">
+        <p id="pollutionPercentage"></p>
+      </div>
+
+      <div id="weatherDetails"></div>
+      <!-- New section for displaying weather details -->
+    </div>
+
+    <!-- Include Axios via CDN for the browser -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson's Disease Detection - Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: transparent;
+            background-image: url(fluid-gradient-wavy-background_23-2149111799.jpg);
+            background-size: cover;
+        }
+        .login-container {
+            background-color: transparent;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 370px;
+            height: 380px;
+        }
+        h1 {
+            text-align: center;
+            color: whitesmoke;
+            font-size: x-large;
+            padding: 10px;
+        }
+        label, input {
+            display: block;
+            width: 90%;
+            margin: 10px 0;
+            color: aliceblue;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid ;
+            border-radius: 10px;
+            background-color: transparent;
+        }
+        button {
+            width: 96%;
+            margin-top: 10px;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: #007acc;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(103, 10, 103);
+        }
+        .error {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Welcome Back!</h1>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+            <div id="errorMsg" class="error"></div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Default credentials (for testing)
+            const defaultUsername = 'admin';
+            const defaultPassword = 'admin';
+
+            // Get user input values
+            const enteredUsername = document.getElementById('username').value;
+            const enteredPassword = document.getElementById('password').value;
+
+            // Check if session data exists for username and password
+            const savedUsername = sessionStorage.getItem('username');
+            const savedPassword = sessionStorage.getItem('password');
+
+            // Validate login based on session data or default credentials
+            if ((enteredUsername === savedUsername && enteredPassword === savedPassword) ||
+                (enteredUsername === defaultUsername && enteredPassword === defaultPassword)) {
+                alert('Login successful!');
+                window.location.href = 'index.html';  // Redirect to the home page after login
+            } else {
+                document.getElementById('errorMsg').textContent = 'Invalid username or password.';
+            }
+        });
+    </script>
+</body>
+</html> -->
